@@ -1,0 +1,146 @@
+<! Assignment 1 Feedback Form (ANKITA)>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            input[type=text],
+            select,
+            textarea {
+                width: 50%;
+                padding: 20px;
+                border: 3px solid rgba(247, 4, 4, 0.87);
+                border-radius: 8px;
+                resize: vertical;
+            }
+
+            input[type=email],
+            select,
+            textarea {
+                width: 100%;
+                padding: 12px;
+                border: 3px solid rgb(247, 4, 0.87);
+                border-radius: 8px;
+                resize: vertical;
+            }
+
+            label {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+            }
+
+            input[type=submit] {
+                background-color: rgb(247, 4, 0.87);
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+            }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+            .container {
+                border-radius: 5px;
+                background-color: #eee78a;
+                padding: 20px;
+            }
+
+            col-25 {
+                float: left;
+                width: 25%;
+                margin-top: 6px;
+            }
+
+            .col-75 {
+                float: left;
+                width: 65%;
+                margin-top: 6px;
+            }
+
+            :after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>FEEDBACK FORM</h2>
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">ENTER THE FIRST NAME </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="field is mandatory(Type Here)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">ENTER THE LAST NAME </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="field is mandatory(Type Here)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">ENTER THE EMAIL </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="mailid" placeholder="field is mandatory(Type Here)">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <lable for="Phone">ENTER THE PHONE NUMBER </lable>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="mailid" placeholder="field is mandatory(Type Here)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">ENTER THE Country </label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="none">Select Country</option>
+                            <option value="India">India</option>
+                            <option value="America">America</option>
+
+                            <option value="China">China</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="feed_back">ENTER THE FEEDBACK </label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Please Write your Feed Back"
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+    </body>
+
+    </html>
